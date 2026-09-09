@@ -11,33 +11,41 @@
           "period": "Q1 2025",
           "share": 18.0,
           "asp": 480.0,
+          "market_asp": 445.0,
           "units": 180,
           "market": 1000,
-          "revenue": 86400
+          "revenue": 86400,
+          "market_revenue": 445000
         },
         {
           "period": "Q2 2025",
           "share": 19.29203539823009,
           "asp": 492.0,
+          "market_asp": 442.0,
           "units": 218,
           "market": 1130,
-          "revenue": 107256
+          "revenue": 107256,
+          "market_revenue": 499460
         },
         {
           "period": "Q3 2025",
           "share": 20.634920634920633,
           "asp": 504.0,
+          "market_asp": 439.0,
           "units": 260,
           "market": 1260,
-          "revenue": 131040
+          "revenue": 131040,
+          "market_revenue": 553140
         },
         {
           "period": "Q4 2025",
           "share": 21.8705035971223,
           "asp": 516.0,
+          "market_asp": 436.0,
           "units": 304,
           "market": 1390,
-          "revenue": 156864
+          "revenue": 156864,
+          "market_revenue": 606040
         }
       ]
     },
@@ -51,33 +59,41 @@
           "period": "Q1 2025",
           "share": 20.508474576271183,
           "asp": 565.0,
+          "market_asp": 530.0,
           "units": 242,
           "market": 1180,
-          "revenue": 136730
+          "revenue": 136730,
+          "market_revenue": 625400
         },
         {
           "period": "Q2 2025",
           "share": 21.83206106870229,
           "asp": 577.0,
+          "market_asp": 527.0,
           "units": 286,
           "market": 1310,
-          "revenue": 165022
+          "revenue": 165022,
+          "market_revenue": 690370
         },
         {
           "period": "Q3 2025",
           "share": 23.125,
           "asp": 589.0,
+          "market_asp": 524.0,
           "units": 333,
           "market": 1440,
-          "revenue": 196137
+          "revenue": 196137,
+          "market_revenue": 754560
         },
         {
           "period": "Q4 2025",
           "share": 24.394904458598727,
           "asp": 601.0,
+          "market_asp": 521.0,
           "units": 383,
           "market": 1570,
-          "revenue": 230183
+          "revenue": 230183,
+          "market_revenue": 817970
         }
       ]
     },
@@ -91,33 +107,41 @@
           "period": "Q1 2025",
           "share": 18.0,
           "asp": 640.0,
+          "market_asp": 605.0,
           "units": 243,
           "market": 1350,
-          "revenue": 155520
+          "revenue": 155520,
+          "market_revenue": 816750
         },
         {
           "period": "Q2 2025",
           "share": 19.324324324324323,
           "asp": 652.0,
+          "market_asp": 602.0,
           "units": 286,
           "market": 1480,
-          "revenue": 186472
+          "revenue": 186472,
+          "market_revenue": 890960
         },
         {
           "period": "Q3 2025",
           "share": 20.62111801242236,
           "asp": 664.0,
+          "market_asp": 599.0,
           "units": 332,
           "market": 1610,
-          "revenue": 220448
+          "revenue": 220448,
+          "market_revenue": 964390
         },
         {
           "period": "Q4 2025",
           "share": 21.89655172413793,
           "asp": 676.0,
+          "market_asp": 596.0,
           "units": 381,
           "market": 1740,
-          "revenue": 257556
+          "revenue": 257556,
+          "market_revenue": 1037040
         }
       ]
     },
@@ -131,33 +155,41 @@
           "period": "Q1 2025",
           "share": 20.522875816993462,
           "asp": 725.0,
+          "market_asp": 690.0,
           "units": 314,
           "market": 1530,
-          "revenue": 227650
+          "revenue": 227650,
+          "market_revenue": 1055700
         },
         {
           "period": "Q2 2025",
           "share": 21.80722891566265,
           "asp": 737.0,
+          "market_asp": 687.0,
           "units": 362,
           "market": 1660,
-          "revenue": 266794
+          "revenue": 266794,
+          "market_revenue": 1140420
         },
         {
           "period": "Q3 2025",
           "share": 23.072625698324025,
           "asp": 749.0,
+          "market_asp": 684.0,
           "units": 413,
           "market": 1790,
-          "revenue": 309337
+          "revenue": 309337,
+          "market_revenue": 1224360
         },
         {
           "period": "Q4 2025",
           "share": 24.375,
           "asp": 761.0,
+          "market_asp": 681.0,
           "units": 468,
           "market": 1920,
-          "revenue": 356148
+          "revenue": 356148,
+          "market_revenue": 1307520
         }
       ]
     },
@@ -171,33 +203,41 @@
           "period": "Q1 2025",
           "share": 20.99173553719008,
           "asp": 460.0,
+          "market_asp": 425.0,
           "units": 254,
           "market": 1210,
-          "revenue": 116840
+          "revenue": 116840,
+          "market_revenue": 514250
         },
         {
           "period": "Q2 2025",
           "share": 22.313432835820894,
           "asp": 468.0,
+          "market_asp": 420.0,
           "units": 299,
           "market": 1340,
-          "revenue": 139932
+          "revenue": 139932,
+          "market_revenue": 562800
         },
         {
           "period": "Q3 2025",
           "share": 23.605442176870746,
           "asp": 476.0,
+          "market_asp": 415.0,
           "units": 347,
           "market": 1470,
-          "revenue": 165172
+          "revenue": 165172,
+          "market_revenue": 610050
         },
         {
           "period": "Q4 2025",
           "share": 24.875,
           "asp": 484.0,
+          "market_asp": 410.0,
           "units": 398,
           "market": 1600,
-          "revenue": 192632
+          "revenue": 192632,
+          "market_revenue": 656000
         }
       ]
     },
@@ -211,33 +251,41 @@
           "period": "Q1 2025",
           "share": 23.52517985611511,
           "asp": 545.0,
+          "market_asp": 510.0,
           "units": 327,
           "market": 1390,
-          "revenue": 178215
+          "revenue": 178215,
+          "market_revenue": 708900
         },
         {
           "period": "Q2 2025",
           "share": 24.802631578947366,
           "asp": 553.0,
+          "market_asp": 505.0,
           "units": 377,
           "market": 1520,
-          "revenue": 208481
+          "revenue": 208481,
+          "market_revenue": 767600
         },
         {
           "period": "Q3 2025",
           "share": 26.121212121212125,
           "asp": 561.0,
+          "market_asp": 500.0,
           "units": 431,
           "market": 1650,
-          "revenue": 241791
+          "revenue": 241791,
+          "market_revenue": 825000
         },
         {
           "period": "Q4 2025",
           "share": 27.415730337078653,
           "asp": 569.0,
+          "market_asp": 495.0,
           "units": 488,
           "market": 1780,
-          "revenue": 277672
+          "revenue": 277672,
+          "market_revenue": 881100
         }
       ]
     },
@@ -251,33 +299,41 @@
           "period": "Q1 2025",
           "share": 21.025641025641026,
           "asp": 620.0,
+          "market_asp": 585.0,
           "units": 328,
           "market": 1560,
-          "revenue": 203360
+          "revenue": 203360,
+          "market_revenue": 912600
         },
         {
           "period": "Q2 2025",
           "share": 22.30769230769231,
           "asp": 628.0,
+          "market_asp": 580.0,
           "units": 377,
           "market": 1690,
-          "revenue": 236756
+          "revenue": 236756,
+          "market_revenue": 980200
         },
         {
           "period": "Q3 2025",
           "share": 23.626373626373624,
           "asp": 636.0,
+          "market_asp": 575.0,
           "units": 430,
           "market": 1820,
-          "revenue": 273480
+          "revenue": 273480,
+          "market_revenue": 1046500
         },
         {
           "period": "Q4 2025",
           "share": 24.923076923076923,
           "asp": 644.0,
+          "market_asp": 570.0,
           "units": 486,
           "market": 1950,
-          "revenue": 312984
+          "revenue": 312984,
+          "market_revenue": 1111500
         }
       ]
     },
@@ -291,33 +347,41 @@
           "period": "Q1 2025",
           "share": 23.50574712643678,
           "asp": 705.0,
+          "market_asp": 670.0,
           "units": 409,
           "market": 1740,
-          "revenue": 288345
+          "revenue": 288345,
+          "market_revenue": 1165800
         },
         {
           "period": "Q2 2025",
           "share": 24.81283422459893,
           "asp": 713.0,
+          "market_asp": 665.0,
           "units": 464,
           "market": 1870,
-          "revenue": 330832
+          "revenue": 330832,
+          "market_revenue": 1243550
         },
         {
           "period": "Q3 2025",
           "share": 26.1,
           "asp": 721.0,
+          "market_asp": 660.0,
           "units": 522,
           "market": 2000,
-          "revenue": 376362
+          "revenue": 376362,
+          "market_revenue": 1320000
         },
         {
           "period": "Q4 2025",
           "share": 27.417840375586856,
           "asp": 729.0,
+          "market_asp": 655.0,
           "units": 584,
           "market": 2130,
-          "revenue": 425736
+          "revenue": 425736,
+          "market_revenue": 1395150
         }
       ]
     },
@@ -331,33 +395,41 @@
           "period": "Q1 2025",
           "share": 24.014084507042256,
           "asp": 440.0,
+          "market_asp": 405.0,
           "units": 341,
           "market": 1420,
-          "revenue": 150040
+          "revenue": 150040,
+          "market_revenue": 575100
         },
         {
           "period": "Q2 2025",
           "share": 25.290322580645164,
           "asp": 444.0,
+          "market_asp": 398.0,
           "units": 392,
           "market": 1550,
-          "revenue": 174048
+          "revenue": 174048,
+          "market_revenue": 616900
         },
         {
           "period": "Q3 2025",
           "share": 26.607142857142858,
           "asp": 448.0,
+          "market_asp": 391.0,
           "units": 447,
           "market": 1680,
-          "revenue": 200256
+          "revenue": 200256,
+          "market_revenue": 656880
         },
         {
           "period": "Q4 2025",
           "share": 27.900552486187845,
           "asp": 452.0,
+          "market_asp": 384.0,
           "units": 505,
           "market": 1810,
-          "revenue": 228260
+          "revenue": 228260,
+          "market_revenue": 695040
         }
       ]
     },
@@ -371,33 +443,41 @@
           "period": "Q1 2025",
           "share": 26.5,
           "asp": 525.0,
+          "market_asp": 490.0,
           "units": 424,
           "market": 1600,
-          "revenue": 222600
+          "revenue": 222600,
+          "market_revenue": 784000
         },
         {
           "period": "Q2 2025",
           "share": 27.803468208092486,
           "asp": 529.0,
+          "market_asp": 483.0,
           "units": 481,
           "market": 1730,
-          "revenue": 254449
+          "revenue": 254449,
+          "market_revenue": 835590
         },
         {
           "period": "Q3 2025",
           "share": 29.08602150537634,
           "asp": 533.0,
+          "market_asp": 476.0,
           "units": 541,
           "market": 1860,
-          "revenue": 288353
+          "revenue": 288353,
+          "market_revenue": 885360
         },
         {
           "period": "Q4 2025",
           "share": 30.402010050251256,
           "asp": 537.0,
+          "market_asp": 469.0,
           "units": 605,
           "market": 1990,
-          "revenue": 324885
+          "revenue": 324885,
+          "market_revenue": 933310
         }
       ]
     },
@@ -411,33 +491,41 @@
           "period": "Q1 2025",
           "share": 24.01129943502825,
           "asp": 600.0,
+          "market_asp": 565.0,
           "units": 425,
           "market": 1770,
-          "revenue": 255000
+          "revenue": 255000,
+          "market_revenue": 1000050
         },
         {
           "period": "Q2 2025",
           "share": 25.31578947368421,
           "asp": 604.0,
+          "market_asp": 558.0,
           "units": 481,
           "market": 1900,
-          "revenue": 290524
+          "revenue": 290524,
+          "market_revenue": 1060200
         },
         {
           "period": "Q3 2025",
           "share": 26.60098522167488,
           "asp": 608.0,
+          "market_asp": 551.0,
           "units": 540,
           "market": 2030,
-          "revenue": 328320
+          "revenue": 328320,
+          "market_revenue": 1118530
         },
         {
           "period": "Q4 2025",
           "share": 27.916666666666668,
           "asp": 612.0,
+          "market_asp": 544.0,
           "units": 603,
           "market": 2160,
-          "revenue": 369036
+          "revenue": 369036,
+          "market_revenue": 1175040
         }
       ]
     },
@@ -451,33 +539,41 @@
           "period": "Q1 2025",
           "share": 26.51282051282051,
           "asp": 685.0,
+          "market_asp": 650.0,
           "units": 517,
           "market": 1950,
-          "revenue": 354145
+          "revenue": 354145,
+          "market_revenue": 1267500
         },
         {
           "period": "Q2 2025",
           "share": 27.78846153846154,
           "asp": 689.0,
+          "market_asp": 643.0,
           "units": 578,
           "market": 2080,
-          "revenue": 398242
+          "revenue": 398242,
+          "market_revenue": 1337440
         },
         {
           "period": "Q3 2025",
           "share": 29.095022624434392,
           "asp": 693.0,
+          "market_asp": 636.0,
           "units": 643,
           "market": 2210,
-          "revenue": 445599
+          "revenue": 445599,
+          "market_revenue": 1405560
         },
         {
           "period": "Q4 2025",
           "share": 30.384615384615383,
           "asp": 697.0,
+          "market_asp": 629.0,
           "units": 711,
           "market": 2340,
-          "revenue": 495567
+          "revenue": 495567,
+          "market_revenue": 1471860
         }
       ]
     }

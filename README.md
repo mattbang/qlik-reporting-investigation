@@ -12,13 +12,17 @@ The work progressed from a first Tabular report to country- and division-specifi
 
 **The visual above is a new synthetic demonstration:** 12 unique country/product slides assembled into 8 scoped packages, with 24 slide placements. It illustrates the reporting pattern; these are not historical production-volume figures.
 
+The pricing chart compares **company average selling price with the total-market average for the same country, product group and quarter**. Comparing these trends was a management priority: is our pricing moving with the market, or diverging from it? The fictional example deliberately shows company pricing increasing while the market average falls. It illustrates the question, without implying this was a historical BIOTRONIK result.
+
+Both averages use revenue divided by units within the matching scope. The total market includes the company; it is not a competitor-only average. Market share remains company units divided by total-market units. When combining scopes, the demo calculates ratios from summed revenue and units, rather than averaging the displayed averages.
+
 ## Explore the work
 
 - [Investigation and decisions](docs/case-study.md): what I initiated, learned, built and recommended.
 - [Tabular versus Application Automation](docs/approach-comparison.md): the trade-offs I documented in 2024, with Subscriptions as a third option.
 - [Presentation-layout study](docs/layout-study.md): cropped comparisons from three retained iterations, with the remaining alignment limitations explained.
 - [Country and division reporting](reports/index.html): generated report packages; download the repository and open this file locally. GitHub does not run HTML files directly.
-- [Editable sample slides](reports/Country-Product-Report.pptx): fictional market-share and average-selling-price trends.
+- [Editable sample slides](reports/Country-Product-Report.pptx): fictional market share and company-versus-market average selling price trends.
 - [Evidence and scope](docs/evidence.md): what the contemporary records establish and what remains my retrospective account.
 
 ## My ownership

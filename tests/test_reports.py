@@ -17,7 +17,18 @@ class ReportChecks(unittest.TestCase):
   for t in totals:
    r=[r for r in self.data if r['period']==t['period']]
    self.assertAlmostEqual(t['asp'],sum(x['revenue_eur'] for x in r)/sum(x['company_units'] for x in r))
+   self.assertAlmostEqual(t['market_asp'],sum(x['market_revenue_eur'] for x in r)/sum(x['market_units'] for x in r))
    self.assertAlmostEqual(t['share'],100*sum(x['company_units'] for x in r)/sum(x['market_units'] for x in r))
+ def test_market_benchmark_scope_and_rendering(self):
+  for s in self.m['slides']:
+   scoped=[r for r in self.data if (r['country'],r['division'],r['product_group'])==(s['country'],s['division'],s['group'])]
+   for point,row in zip(s['series'],scoped):
+    self.assertAlmostEqual(point['market_asp'],row['market_revenue_eur']/row['market_units'])
+    self.assertGreater(row['market_revenue_eur'],row['revenue_eur'])
+   svg=(R/'reports'/f'{s["id"]}.svg').read_text()
+   self.assertIn('Market average',svg)
+   for point in s['series']:
+    self.assertIn(f">{point['market_asp']:.1f}</text>",svg)
  def test_scope_complete(self):
   self.assertEqual(len(self.m['slides']),12);self.assertEqual(len(self.m['packages']),8)
   self.assertEqual(sum(len(p['slide_ids']) for p in self.m['packages']),24)
