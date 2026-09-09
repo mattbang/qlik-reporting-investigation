@@ -1,72 +1,65 @@
-# Qlik Reporting Investigation
+# Reusable Management Reporting: From Prototype to Recommendation
 
-### A self-initiated investigation into scalable management reporting
+**Tested how existing Qlik content could become reusable management presentations—and identified what wider adoption would require.**
 
-**Matthew Bangle · Business analysis, reporting automation and process improvement · BIOTRONIK, 2024**
+I initiated the investigation, learned the reporting tools, built prototypes and compared approaches against country, division and presentation requirements. The deliverable was a practical recommendation supported by working examples and a clearer view of ownership and access dependencies.
 
-I initiated this investigation, taught myself the available Qlik reporting tools, built working examples and presented a recommendation for automating recurring management reports. I wanted to reuse the data and visualisations already maintained across Qlik applications, rather than make every region reconstruct the same management package manually.
+[Open sample slides](reports/Country-Product-Report.pptx) · [Investigation and decisions](docs/case-study.md) · [Website case study](https://matthew-bangle-data-portfolio.mattbangle.chatgpt.site/work/reporting-automation-adoption)
 
-The work progressed from a first Tabular report to country- and division-specific output, a comparison of reporting approaches, consultation with Qlik technical specialists, and a close recreation of the existing presentation style. It established a practical route toward reusable reporting templates. Wider adoption needed central ownership and coordinated access across applications.
+![Fictional country and product report variants assembled from a shared template](assets/report-stack.png)
 
-![Fictional report variants generated from a shared template](assets/report-stack.png)
+*Current synthetic demonstration: shared report content assembled for different audiences. Employer figures are excluded.*
 
-**The visual above is a new synthetic demonstration:** 12 unique country/product slides assembled into 8 scoped packages, with 24 slide placements. It illustrates the reporting pattern; these are not historical production-volume figures.
+## What the investigation established
 
-**The volume chart pairs total-market and company unit bars with an overlaid market-share line.** This lets a reader distinguish market growth from company growth and see whether share is increasing. Both bars use the same zero-based unit axis; the percentage line uses a separate, labelled axis.
+Reusable templates could address repeated presentation preparation, but a convincing prototype was only part of the solution. The proposed broader service also needed coordinated application access, a named owner and maintenance responsibilities. Those operating conditions were not established for a wider rollout.
 
-The pricing chart compares **company average selling price with the total-market average for the same country, product group and quarter**. Comparing these trends was a management priority: is our pricing moving with the market, or diverging from it? The fictional example deliberately shows company pricing increasing while the market average falls. It illustrates the question, without implying this was a historical BIOTRONIK result.
+My contribution was both technical and organisational: make the options concrete enough to evaluate, then identify the decisions needed for adoption. The lesson I would apply again is to develop the operating model alongside the proof of concept.
 
-Both averages use revenue divided by units within the matching scope. The total market includes the company; it is not a competitor-only average. Market share remains company units divided by total-market units. When combining scopes, the demo calculates ratios from summed revenue and units, rather than averaging the displayed averages.
+## Requirements behind the prototypes
 
-## Explore the work
+Regional management presentations combined information from several Qlik applications. Teams repeatedly rebuilt similar packages from data and visualisations already maintained elsewhere. A reusable approach needed to preserve familiar presentation standards, combine applications and select the right country and division scope.
 
-- [Investigation and decisions](docs/case-study.md): what I initiated, learned, built and recommended.
-- [Tabular versus Application Automation](docs/approach-comparison.md): the trade-offs I documented in 2024, with Subscriptions as a third option.
-- [Presentation-layout study](docs/layout-study.md): cropped comparisons from three retained iterations, with the remaining alignment limitations explained.
-- [Country and division reporting](reports/index.html): generated report packages; download the repository and open this file locally. GitHub does not run HTML files directly.
-- [Editable sample slides](reports/Country-Product-Report.pptx): fictional market share and company-versus-market average selling price trends.
-- [Evidence and scope](docs/evidence.md): what the contemporary records establish and what remains my retrospective account.
+| Business requirement | Work I carried out | Decision it informed |
+| --- | --- | --- |
+| Repeat country and division reports | Built templates and explored filters, levels and recipient scope | How one template could produce relevant variants |
+| Combine information across applications | Compared Tabular Reporting, Application Automation and Subscriptions | Which approach fitted the reporting requirement |
+| Preserve familiar management presentation standards | Recreated layouts and compared typography, grids and placement | What was achievable and what needed refinement |
+| Resolve uncertain tool capabilities | Consulted technical specialists with examples and explicit requirements | Feasibility and remaining dependencies |
+| Make the approach sustainable | Proposed reusable central templates and identified ownership needs | What had to be agreed before a wider rollout |
 
-## My ownership
+Consultants helped clarify feasibility; they did not build the prototype work presented here. The tool comparison describes the 2024 investigation, not a current product-buying recommendation.
 
-This was self-driven. I identified the opportunity, sought access, learned the tools, built prototypes, investigated limitations, organised discussions with Qlik specialists, and brought findings and proposals to regional management and the central Qlik team.
+## Inspect an audience-specific report
 
-I also did the detailed implementation work that makes an idea testable: report filters and recipient lists, reusable presentation sheets, font and grid comparisons, export experiments, and requests to resolve the remaining permissions and mail-connector issues. Consultants helped clarify feasibility; they did not build the prototype work presented here.
+The current fictional example creates **12 unique slides assembled into eight scoped packages**, with 24 slide placements. The charts compare company performance with total-market growth, market share and average selling prices. These counts describe the public demonstration, not historical production volume.
 
-## What I built and learned
+[Read the charts and calculation definitions](docs/reading-the-demo.md) · [Editable PowerPoint](reports/Country-Product-Report.pptx) · [Presentation-layout studies](docs/layout-study.md)
 
-| Work | Contribution |
-| --- | --- |
-| Tabular reporting | Built and shared a report template and initial outputs. Investigated country/product filter behaviour, levels, page generation and recipient-specific distribution. |
-| Reporting-tool evaluation | Compared the benefits and constraints of Tabular Reporting, Application Automation and PowerPoint Subscriptions against a management-report requirement. |
-| Presentation recreation | Recreated cover, agenda, chapter and content layouts inside Qlik. Compared typography, title placement, margins and other alignment details with the existing PowerPoint format. |
-| Multi-app reporting prototype | Developed an example approach using sheets from multiple applications, with reusable presentation layouts. |
-| Feasibility investigation | Consulted Qlik technical specialists and shared the findings, constraints and next steps with stakeholders. |
-| Adoption proposal | Proposed a centrally reusable reporting-template approach that could reduce repeated preparation work and make regional reports more consistent. |
+## Run the demonstration
 
-## Why it did not become a global reporting process
+Python · HTML/SVG · PowerPoint · Qlik reporting investigation
 
-The limiting factor was organisational readiness as well as technology. In my experience, there was no designated central owner with the mandate and coordinated access needed to assemble and maintain reporting across the relevant applications. Regional needs also competed with centrally maintained dashboard priorities.
-
-Related work, including a senior-management cockpit, provided some of the groundwork. Turning that into a shared regional reporting service would still have required an agreed owner, a supported access model and a commitment to maintain the output for regional users. Those conditions were not in place for the wider approach I proposed.
-
-**My assessment:** the idea was ahead of the organisation’s readiness to operate it. I see the investigation and prototypes as valuable completed work; global harmonisation and the replacement of regional report preparation remained potential benefits, not achieved rollout outcomes.
-
-## Run the synthetic demonstration
-
-Python 3.9 or later; no third-party dependencies are required for the HTML/SVG report generator.
+Python 3.9 or later; no third-party dependencies for the HTML/SVG generator:
 
 ```sh
 python3 demo/build.py
 python3 -m unittest discover -s tests -v
 ```
 
-Open `reports/index.html`. The generator creates twelve country/product-group slides, six country/division packages and two regional/division packages. All addresses use the reserved `example.invalid` domain. It writes files only and sends no email.
+Download the repository and open `reports/index.html` locally. The generator creates twelve country/product-group slides, six country/division packages and two regional/division packages. It writes files and sends no email. Recipient addresses are fictional and use `example.invalid`.
 
-This is a current, transparent illustration of scope selection and report generation. It does not run Qlik, implement Qlik section access or reproduce the original automation. The downloadable PowerPoint is a separate presentation of the same fictional data; the Python command rebuilds HTML, SVG, CSV and JSON outputs.
+The example demonstrates scope selection and report generation. It does not run Qlik, implement its access controls or reproduce the original automation. The PowerPoint is a separate presentation of the same fictional data; the command rebuilds HTML, SVG, CSV and JSON outputs.
 
-## What stays private
+## Evidence and further reading
 
-Original employer figures, full presentations, email threads, recipient lists, app exports, tenant links and access configuration are excluded. The public evidence consists of a written account, limited non-financial layout excerpts and a fully fictional demonstration. See [evidence and scope](docs/evidence.md) for the distinction between contemporary records, my account and new demonstration material.
+- [Investigation and decisions](docs/case-study.md): what I initiated, learned, built and recommended.
+- [Approach comparison](docs/approach-comparison.md): trade-offs against the business requirement.
+- [Layout study](docs/layout-study.md): retained iterations and alignment limitations.
+- [Evidence and scope](docs/evidence.md): contemporary records, retrospective account and new demonstration material.
 
-[Portfolio](https://matthew-bangle-data-portfolio.mattbangle.chatgpt.site) · [LinkedIn](https://www.linkedin.com/in/matthew-bangle/)
+Wider preparation savings remained potential benefits. The recurring market-share report automation elsewhere in my portfolio was separate work; its estimated monthly saving is not assigned again here.
+
+Original employer figures, full presentations, correspondence, recipient lists, tenant links and configuration stay private. Public material includes limited non-financial layout excerpts and a fully fictional demonstration.
+
+[Matthew Bangle on LinkedIn](https://www.linkedin.com/in/matthew-bangle/) · [Full portfolio](https://matthew-bangle-data-portfolio.mattbangle.chatgpt.site/work)
