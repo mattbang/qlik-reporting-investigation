@@ -1,0 +1,106 @@
+[
+  {
+    "id": "northland-rhythm",
+    "country": "Northland",
+    "division": "Rhythm",
+    "recipients": [
+      "northland.rhythm@example.invalid"
+    ],
+    "slide_ids": [
+      "northland-rhythm-pacing",
+      "northland-rhythm-monitoring"
+    ]
+  },
+  {
+    "id": "northland-vascular",
+    "country": "Northland",
+    "division": "Vascular",
+    "recipients": [
+      "northland.vascular@example.invalid"
+    ],
+    "slide_ids": [
+      "northland-vascular-coronary",
+      "northland-vascular-peripheral"
+    ]
+  },
+  {
+    "id": "westhaven-rhythm",
+    "country": "Westhaven",
+    "division": "Rhythm",
+    "recipients": [
+      "westhaven.rhythm@example.invalid"
+    ],
+    "slide_ids": [
+      "westhaven-rhythm-pacing",
+      "westhaven-rhythm-monitoring"
+    ]
+  },
+  {
+    "id": "westhaven-vascular",
+    "country": "Westhaven",
+    "division": "Vascular",
+    "recipients": [
+      "westhaven.vascular@example.invalid"
+    ],
+    "slide_ids": [
+      "westhaven-vascular-coronary",
+      "westhaven-vascular-peripheral"
+    ]
+  },
+  {
+    "id": "southland-rhythm",
+    "country": "Southland",
+    "division": "Rhythm",
+    "recipients": [
+      "southland.rhythm@example.invalid"
+    ],
+    "slide_ids": [
+      "southland-rhythm-pacing",
+      "southland-rhythm-monitoring"
+    ]
+  },
+  {
+    "id": "southland-vascular",
+    "country": "Southland",
+    "division": "Vascular",
+    "recipients": [
+      "southland.vascular@example.invalid"
+    ],
+    "slide_ids": [
+      "southland-vascular-coronary",
+      "southland-vascular-peripheral"
+    ]
+  },
+  {
+    "id": "regional-rhythm",
+    "country": "All",
+    "division": "Rhythm",
+    "recipients": [
+      "regional.rhythm@example.invalid"
+    ],
+    "slide_ids": [
+      "northland-rhythm-pacing",
+      "northland-rhythm-monitoring",
+      "westhaven-rhythm-pacing",
+      "westhaven-rhythm-monitoring",
+      "southland-rhythm-pacing",
+      "southland-rhythm-monitoring"
+    ]
+  },
+  {
+    "id": "regional-vascular",
+    "country": "All",
+    "division": "Vascular",
+    "recipients": [
+      "regional.vascular@example.invalid"
+    ],
+    "slide_ids": [
+      "northland-vascular-coronary",
+      "northland-vascular-peripheral",
+      "westhaven-vascular-coronary",
+      "westhaven-vascular-peripheral",
+      "southland-vascular-coronary",
+      "southland-vascular-peripheral"
+    ]
+  }
+]

@@ -1,0 +1,591 @@
+{
+  "synthetic": true,
+  "slides": [
+    {
+      "id": "northland-rhythm-pacing",
+      "country": "Northland",
+      "division": "Rhythm",
+      "group": "Pacing",
+      "series": [
+        {
+          "period": "Q1 2025",
+          "share": 18.0,
+          "asp": 480.0,
+          "units": 180,
+          "market": 1000,
+          "revenue": 86400
+        },
+        {
+          "period": "Q2 2025",
+          "share": 19.29203539823009,
+          "asp": 492.0,
+          "units": 218,
+          "market": 1130,
+          "revenue": 107256
+        },
+        {
+          "period": "Q3 2025",
+          "share": 20.634920634920633,
+          "asp": 504.0,
+          "units": 260,
+          "market": 1260,
+          "revenue": 131040
+        },
+        {
+          "period": "Q4 2025",
+          "share": 21.8705035971223,
+          "asp": 516.0,
+          "units": 304,
+          "market": 1390,
+          "revenue": 156864
+        }
+      ]
+    },
+    {
+      "id": "northland-rhythm-monitoring",
+      "country": "Northland",
+      "division": "Rhythm",
+      "group": "Monitoring",
+      "series": [
+        {
+          "period": "Q1 2025",
+          "share": 20.508474576271183,
+          "asp": 565.0,
+          "units": 242,
+          "market": 1180,
+          "revenue": 136730
+        },
+        {
+          "period": "Q2 2025",
+          "share": 21.83206106870229,
+          "asp": 577.0,
+          "units": 286,
+          "market": 1310,
+          "revenue": 165022
+        },
+        {
+          "period": "Q3 2025",
+          "share": 23.125,
+          "asp": 589.0,
+          "units": 333,
+          "market": 1440,
+          "revenue": 196137
+        },
+        {
+          "period": "Q4 2025",
+          "share": 24.394904458598727,
+          "asp": 601.0,
+          "units": 383,
+          "market": 1570,
+          "revenue": 230183
+        }
+      ]
+    },
+    {
+      "id": "northland-vascular-coronary",
+      "country": "Northland",
+      "division": "Vascular",
+      "group": "Coronary",
+      "series": [
+        {
+          "period": "Q1 2025",
+          "share": 18.0,
+          "asp": 640.0,
+          "units": 243,
+          "market": 1350,
+          "revenue": 155520
+        },
+        {
+          "period": "Q2 2025",
+          "share": 19.324324324324323,
+          "asp": 652.0,
+          "units": 286,
+          "market": 1480,
+          "revenue": 186472
+        },
+        {
+          "period": "Q3 2025",
+          "share": 20.62111801242236,
+          "asp": 664.0,
+          "units": 332,
+          "market": 1610,
+          "revenue": 220448
+        },
+        {
+          "period": "Q4 2025",
+          "share": 21.89655172413793,
+          "asp": 676.0,
+          "units": 381,
+          "market": 1740,
+          "revenue": 257556
+        }
+      ]
+    },
+    {
+      "id": "northland-vascular-peripheral",
+      "country": "Northland",
+      "division": "Vascular",
+      "group": "Peripheral",
+      "series": [
+        {
+          "period": "Q1 2025",
+          "share": 20.522875816993462,
+          "asp": 725.0,
+          "units": 314,
+          "market": 1530,
+          "revenue": 227650
+        },
+        {
+          "period": "Q2 2025",
+          "share": 21.80722891566265,
+          "asp": 737.0,
+          "units": 362,
+          "market": 1660,
+          "revenue": 266794
+        },
+        {
+          "period": "Q3 2025",
+          "share": 23.072625698324025,
+          "asp": 749.0,
+          "units": 413,
+          "market": 1790,
+          "revenue": 309337
+        },
+        {
+          "period": "Q4 2025",
+          "share": 24.375,
+          "asp": 761.0,
+          "units": 468,
+          "market": 1920,
+          "revenue": 356148
+        }
+      ]
+    },
+    {
+      "id": "westhaven-rhythm-pacing",
+      "country": "Westhaven",
+      "division": "Rhythm",
+      "group": "Pacing",
+      "series": [
+        {
+          "period": "Q1 2025",
+          "share": 20.99173553719008,
+          "asp": 460.0,
+          "units": 254,
+          "market": 1210,
+          "revenue": 116840
+        },
+        {
+          "period": "Q2 2025",
+          "share": 22.313432835820894,
+          "asp": 468.0,
+          "units": 299,
+          "market": 1340,
+          "revenue": 139932
+        },
+        {
+          "period": "Q3 2025",
+          "share": 23.605442176870746,
+          "asp": 476.0,
+          "units": 347,
+          "market": 1470,
+          "revenue": 165172
+        },
+        {
+          "period": "Q4 2025",
+          "share": 24.875,
+          "asp": 484.0,
+          "units": 398,
+          "market": 1600,
+          "revenue": 192632
+        }
+      ]
+    },
+    {
+      "id": "westhaven-rhythm-monitoring",
+      "country": "Westhaven",
+      "division": "Rhythm",
+      "group": "Monitoring",
+      "series": [
+        {
+          "period": "Q1 2025",
+          "share": 23.52517985611511,
+          "asp": 545.0,
+          "units": 327,
+          "market": 1390,
+          "revenue": 178215
+        },
+        {
+          "period": "Q2 2025",
+          "share": 24.802631578947366,
+          "asp": 553.0,
+          "units": 377,
+          "market": 1520,
+          "revenue": 208481
+        },
+        {
+          "period": "Q3 2025",
+          "share": 26.121212121212125,
+          "asp": 561.0,
+          "units": 431,
+          "market": 1650,
+          "revenue": 241791
+        },
+        {
+          "period": "Q4 2025",
+          "share": 27.415730337078653,
+          "asp": 569.0,
+          "units": 488,
+          "market": 1780,
+          "revenue": 277672
+        }
+      ]
+    },
+    {
+      "id": "westhaven-vascular-coronary",
+      "country": "Westhaven",
+      "division": "Vascular",
+      "group": "Coronary",
+      "series": [
+        {
+          "period": "Q1 2025",
+          "share": 21.025641025641026,
+          "asp": 620.0,
+          "units": 328,
+          "market": 1560,
+          "revenue": 203360
+        },
+        {
+          "period": "Q2 2025",
+          "share": 22.30769230769231,
+          "asp": 628.0,
+          "units": 377,
+          "market": 1690,
+          "revenue": 236756
+        },
+        {
+          "period": "Q3 2025",
+          "share": 23.626373626373624,
+          "asp": 636.0,
+          "units": 430,
+          "market": 1820,
+          "revenue": 273480
+        },
+        {
+          "period": "Q4 2025",
+          "share": 24.923076923076923,
+          "asp": 644.0,
+          "units": 486,
+          "market": 1950,
+          "revenue": 312984
+        }
+      ]
+    },
+    {
+      "id": "westhaven-vascular-peripheral",
+      "country": "Westhaven",
+      "division": "Vascular",
+      "group": "Peripheral",
+      "series": [
+        {
+          "period": "Q1 2025",
+          "share": 23.50574712643678,
+          "asp": 705.0,
+          "units": 409,
+          "market": 1740,
+          "revenue": 288345
+        },
+        {
+          "period": "Q2 2025",
+          "share": 24.81283422459893,
+          "asp": 713.0,
+          "units": 464,
+          "market": 1870,
+          "revenue": 330832
+        },
+        {
+          "period": "Q3 2025",
+          "share": 26.1,
+          "asp": 721.0,
+          "units": 522,
+          "market": 2000,
+          "revenue": 376362
+        },
+        {
+          "period": "Q4 2025",
+          "share": 27.417840375586856,
+          "asp": 729.0,
+          "units": 584,
+          "market": 2130,
+          "revenue": 425736
+        }
+      ]
+    },
+    {
+      "id": "southland-rhythm-pacing",
+      "country": "Southland",
+      "division": "Rhythm",
+      "group": "Pacing",
+      "series": [
+        {
+          "period": "Q1 2025",
+          "share": 24.014084507042256,
+          "asp": 440.0,
+          "units": 341,
+          "market": 1420,
+          "revenue": 150040
+        },
+        {
+          "period": "Q2 2025",
+          "share": 25.290322580645164,
+          "asp": 444.0,
+          "units": 392,
+          "market": 1550,
+          "revenue": 174048
+        },
+        {
+          "period": "Q3 2025",
+          "share": 26.607142857142858,
+          "asp": 448.0,
+          "units": 447,
+          "market": 1680,
+          "revenue": 200256
+        },
+        {
+          "period": "Q4 2025",
+          "share": 27.900552486187845,
+          "asp": 452.0,
+          "units": 505,
+          "market": 1810,
+          "revenue": 228260
+        }
+      ]
+    },
+    {
+      "id": "southland-rhythm-monitoring",
+      "country": "Southland",
+      "division": "Rhythm",
+      "group": "Monitoring",
+      "series": [
+        {
+          "period": "Q1 2025",
+          "share": 26.5,
+          "asp": 525.0,
+          "units": 424,
+          "market": 1600,
+          "revenue": 222600
+        },
+        {
+          "period": "Q2 2025",
+          "share": 27.803468208092486,
+          "asp": 529.0,
+          "units": 481,
+          "market": 1730,
+          "revenue": 254449
+        },
+        {
+          "period": "Q3 2025",
+          "share": 29.08602150537634,
+          "asp": 533.0,
+          "units": 541,
+          "market": 1860,
+          "revenue": 288353
+        },
+        {
+          "period": "Q4 2025",
+          "share": 30.402010050251256,
+          "asp": 537.0,
+          "units": 605,
+          "market": 1990,
+          "revenue": 324885
+        }
+      ]
+    },
+    {
+      "id": "southland-vascular-coronary",
+      "country": "Southland",
+      "division": "Vascular",
+      "group": "Coronary",
+      "series": [
+        {
+          "period": "Q1 2025",
+          "share": 24.01129943502825,
+          "asp": 600.0,
+          "units": 425,
+          "market": 1770,
+          "revenue": 255000
+        },
+        {
+          "period": "Q2 2025",
+          "share": 25.31578947368421,
+          "asp": 604.0,
+          "units": 481,
+          "market": 1900,
+          "revenue": 290524
+        },
+        {
+          "period": "Q3 2025",
+          "share": 26.60098522167488,
+          "asp": 608.0,
+          "units": 540,
+          "market": 2030,
+          "revenue": 328320
+        },
+        {
+          "period": "Q4 2025",
+          "share": 27.916666666666668,
+          "asp": 612.0,
+          "units": 603,
+          "market": 2160,
+          "revenue": 369036
+        }
+      ]
+    },
+    {
+      "id": "southland-vascular-peripheral",
+      "country": "Southland",
+      "division": "Vascular",
+      "group": "Peripheral",
+      "series": [
+        {
+          "period": "Q1 2025",
+          "share": 26.51282051282051,
+          "asp": 685.0,
+          "units": 517,
+          "market": 1950,
+          "revenue": 354145
+        },
+        {
+          "period": "Q2 2025",
+          "share": 27.78846153846154,
+          "asp": 689.0,
+          "units": 578,
+          "market": 2080,
+          "revenue": 398242
+        },
+        {
+          "period": "Q3 2025",
+          "share": 29.095022624434392,
+          "asp": 693.0,
+          "units": 643,
+          "market": 2210,
+          "revenue": 445599
+        },
+        {
+          "period": "Q4 2025",
+          "share": 30.384615384615383,
+          "asp": 697.0,
+          "units": 711,
+          "market": 2340,
+          "revenue": 495567
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "id": "northland-rhythm",
+      "country": "Northland",
+      "division": "Rhythm",
+      "recipients": [
+        "northland.rhythm@example.invalid"
+      ],
+      "slide_ids": [
+        "northland-rhythm-pacing",
+        "northland-rhythm-monitoring"
+      ]
+    },
+    {
+      "id": "northland-vascular",
+      "country": "Northland",
+      "division": "Vascular",
+      "recipients": [
+        "northland.vascular@example.invalid"
+      ],
+      "slide_ids": [
+        "northland-vascular-coronary",
+        "northland-vascular-peripheral"
+      ]
+    },
+    {
+      "id": "westhaven-rhythm",
+      "country": "Westhaven",
+      "division": "Rhythm",
+      "recipients": [
+        "westhaven.rhythm@example.invalid"
+      ],
+      "slide_ids": [
+        "westhaven-rhythm-pacing",
+        "westhaven-rhythm-monitoring"
+      ]
+    },
+    {
+      "id": "westhaven-vascular",
+      "country": "Westhaven",
+      "division": "Vascular",
+      "recipients": [
+        "westhaven.vascular@example.invalid"
+      ],
+      "slide_ids": [
+        "westhaven-vascular-coronary",
+        "westhaven-vascular-peripheral"
+      ]
+    },
+    {
+      "id": "southland-rhythm",
+      "country": "Southland",
+      "division": "Rhythm",
+      "recipients": [
+        "southland.rhythm@example.invalid"
+      ],
+      "slide_ids": [
+        "southland-rhythm-pacing",
+        "southland-rhythm-monitoring"
+      ]
+    },
+    {
+      "id": "southland-vascular",
+      "country": "Southland",
+      "division": "Vascular",
+      "recipients": [
+        "southland.vascular@example.invalid"
+      ],
+      "slide_ids": [
+        "southland-vascular-coronary",
+        "southland-vascular-peripheral"
+      ]
+    },
+    {
+      "id": "regional-rhythm",
+      "country": "All",
+      "division": "Rhythm",
+      "recipients": [
+        "regional.rhythm@example.invalid"
+      ],
+      "slide_ids": [
+        "northland-rhythm-pacing",
+        "northland-rhythm-monitoring",
+        "westhaven-rhythm-pacing",
+        "westhaven-rhythm-monitoring",
+        "southland-rhythm-pacing",
+        "southland-rhythm-monitoring"
+      ]
+    },
+    {
+      "id": "regional-vascular",
+      "country": "All",
+      "division": "Vascular",
+      "recipients": [
+        "regional.vascular@example.invalid"
+      ],
+      "slide_ids": [
+        "northland-vascular-coronary",
+        "northland-vascular-peripheral",
+        "westhaven-vascular-coronary",
+        "westhaven-vascular-peripheral",
+        "southland-vascular-coronary",
+        "southland-vascular-peripheral"
+      ]
+    }
+  ]
+}
