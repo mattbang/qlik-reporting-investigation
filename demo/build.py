@@ -1,6 +1,6 @@
 """Build fictional country/division report variants. Standard library only; no email sending."""
 from pathlib import Path
-import csv,json,html
+import csv,json,html,math
 ROOT=Path(__file__).resolve().parents[1]
 COUNTRIES=['Northland','Westhaven','Southland']
 GROUPS={'Rhythm':['Pacing','Monitoring'],'Vascular':['Coronary','Peripheral']}
@@ -49,11 +49,37 @@ def chart(values,x,y,width,height,unit,color,benchmark=None):
    s+=f'<line x1="{lx}" y1="{y-30}" x2="{lx+30}" y2="{y-30}" stroke="{stroke}" stroke-width="4"{dash}/><text x="{lx+39}" y="{y-24}" font-size="17">{label}</text>'
  return s
 
+def volume_chart(data,color):
+ x,y,width,height=110,320,400,200
+ unit_max=math.ceil(max(r['market'] for r in data)*2.5/1000)*1000
+ share_max=40
+ s='<g aria-label="Market and company units with market share overlay">'
+ for lx,label,fill in [(75,'Market units','#b8c6ce'),(230,'Company units',color)]:
+  s+=f'<rect x="{lx}" y="275" width="13" height="13" fill="{fill}"/><text x="{lx+20}" y="287" font-size="16">{label}</text>'
+ s+='<line x1="402" y1="282" x2="426" y2="282" stroke="#182331" stroke-width="3"/><circle cx="414" cy="282" r="4" fill="#182331"/><text x="433" y="287" font-size="16">Share %</text>'
+ s+=f'<text x="{x-15}" y="310" text-anchor="end" font-size="13" fill="#586171">Units</text><text x="{x+width+15}" y="310" font-size="13" fill="#586171">Share</text>'
+ for tick in range(5):
+  yy=y+height-tick*height/4
+  s+=f'<line x1="{x}" y1="{yy}" x2="{x+width}" y2="{yy}" stroke="#e1e6eb"/><text x="{x-12}" y="{yy+4}" text-anchor="end" font-size="13" fill="#586171">{unit_max*tick/4:,.0f}</text><text x="{x+width+12}" y="{yy+4}" font-size="13" fill="#586171">{share_max*tick/4:.0f}%</text>'
+ pts=[]
+ for i,r in enumerate(data):
+  cx=x+(i+.5)*width/4
+  for key,dx,fill in [('market',-17,'#b8c6ce'),('units',17,color)]:
+   h=r[key]/unit_max*height;bx=cx+dx
+   s+=f'<rect data-series="{key}" data-value="{r[key]}" x="{bx-13}" y="{y+height-h}" width="26" height="{h}" fill="{fill}"/><text x="{bx}" y="{y+height-h-7}" text-anchor="middle" font-size="13" fill="#586171">{r[key]:,}</text>'
+  pts.append((cx,y+height-r['share']/share_max*height))
+  s+=f'<text x="{cx}" y="{y+height+28}" text-anchor="middle" font-size="16">Q{i+1}</text>'
+ path=' '.join(f'{a:.1f},{b:.1f}' for a,b in pts)
+ s+=f'<polyline data-series="share" points="{path}" fill="none" stroke="#182331" stroke-width="3"/>'
+ for (a,b),r in zip(pts,data):
+  s+=f'<circle cx="{a}" cy="{b}" r="4.5" fill="#182331"/><text x="{a}" y="{b-12}" text-anchor="middle" font-size="16" fill="#182331">{r["share"]:.1f}%</text>'
+ return s+'</g>'
+
 def slide(data,country,division,group):
  a=series(data);color=COLORS[division]
- s=f'<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675"><rect width="1200" height="675" fill="#fff"/><g font-family="Arial,sans-serif" fill="#182331"><text x="60" y="53" font-size="16" fill="{color}">MANAGEMENT REVIEW / SYNTHETIC DEMONSTRATION</text><text x="60" y="108" font-size="35" font-weight="700">{country} · {division}</text><text x="60" y="147" font-size="25">{group} · 2025 quarterly review</text><line x1="60" y1="177" x2="1140" y2="177" stroke="{color}" stroke-width="3"/><text x="70" y="239" font-size="22">Unit market share</text><text x="685" y="239" font-size="22">Average selling price (EUR)</text>'
- s+=chart([r['share'] for r in a],90,310,430,190,'%',color)+chart([r['asp'] for r in a],710,320,370,180,'',color,[r['market_asp'] for r in a])
- s+='<text x="60" y="604" font-size="16" fill="#586171">ASP = revenue / units, calculated separately for company and total market (including company).</text><text x="60" y="637" font-size="15" fill="#586171">Fictional data and routing. New portfolio demonstration; no live Qlik connection.</text></g></svg>'
+ s=f'<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675"><rect width="1200" height="675" fill="#fff"/><g font-family="Arial,sans-serif" fill="#182331"><text x="60" y="53" font-size="16" fill="{color}">MANAGEMENT REVIEW / SYNTHETIC DEMONSTRATION</text><text x="60" y="108" font-size="35" font-weight="700">{country} · {division}</text><text x="60" y="147" font-size="25">{group} · 2025 quarterly review</text><line x1="60" y1="177" x2="1140" y2="177" stroke="{color}" stroke-width="3"/><text x="70" y="239" font-size="22">Unit volumes &amp; market share</text><text x="685" y="239" font-size="22">Average selling price (EUR)</text>'
+ s+=volume_chart(a,color)+chart([r['asp'] for r in a],710,320,370,180,'',color,[r['market_asp'] for r in a])
+ s+='<text x="60" y="579" font-size="15" fill="#586171">Market share = company units / total-market units. Bars: left axis. Share line: right axis.</text><text x="60" y="604" font-size="16" fill="#586171">ASP = revenue / units, calculated separately for company and total market (including company).</text><text x="60" y="637" font-size="15" fill="#586171">Fictional data and routing. New portfolio demonstration; no live Qlik connection.</text></g></svg>'
  return s
 
 def build():
@@ -74,7 +100,7 @@ def build():
  (ROOT/'reports/manifest.json').write_text(json.dumps(dict(synthetic=True,slides=slides,packages=scopes),indent=2)+'\n')
  style='body{font:18px/1.6 system-ui;max-width:1250px;margin:35px auto;padding:0 24px;color:#182331;background:#fafbfc}a{color:#315cc5}img{width:100%;height:auto;border:1px solid #ccd4df;margin:22px 0}h1{font-size:38px}nav{margin:20px 0}@media print{nav{display:none}img{break-after:page;border:0}body{margin:0;padding:0}}'
  for scope in scopes:
-  imgs=''.join(f'<img src="{sid}.svg" alt="{sid.replace("-"," ")} market share and company versus market average selling price">' for sid in scope['slide_ids'])
+  imgs=''.join(f'<img src="{sid}.svg" alt="{sid.replace("-"," ")} market and company unit bars with market share overlay, and company versus market average selling price">' for sid in scope['slide_ids'])
   page=f'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{scope["id"]} report</title><style>{style}</style><nav><a href="index.html">All report packages</a></nav><h1>{scope["country"]} · {scope["division"]}</h1><p>Fictional report package. Routing: {html.escape(", ".join(scope["recipients"]))}. No email is sent.</p>{imgs}</html>'
   (ROOT/'reports'/f'{scope["id"]}.html').write_text(page)
  links=''.join(f'<li><a href="{s["id"]}.html">{s["country"]} / {s["division"]}</a> — {len(s["slide_ids"])} slides</li>' for s in scopes)

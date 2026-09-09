@@ -29,6 +29,17 @@ class ReportChecks(unittest.TestCase):
    self.assertIn('Market average',svg)
    for point in s['series']:
     self.assertIn(f">{point['market_asp']:.1f}</text>",svg)
+ def test_unit_bars_and_share_overlay_reconcile(self):
+  import xml.etree.ElementTree as ET
+  ns={'s':'http://www.w3.org/2000/svg'}
+  for slide in self.m['slides']:
+   svg=ET.parse(R/'reports'/f'{slide["id"]}.svg')
+   for key in ['market','units']:
+    bars=svg.findall(f'.//s:rect[@data-series="{key}"]',ns)
+    self.assertEqual([int(b.attrib['data-value']) for b in bars],[p[key] for p in slide['series']])
+   self.assertEqual(len(svg.findall('.//s:polyline[@data-series="share"]',ns)),1)
+   for point in slide['series']:
+    self.assertAlmostEqual(point['share'],point['units']/point['market']*100)
  def test_scope_complete(self):
   self.assertEqual(len(self.m['slides']),12);self.assertEqual(len(self.m['packages']),8)
   self.assertEqual(sum(len(p['slide_ids']) for p in self.m['packages']),24)
