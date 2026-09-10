@@ -1,10 +1,14 @@
-# Reusable Management Reporting: From Prototype to Recommendation
+# Scaling Management Reporting with Qlik
 
-**Tested how existing Qlik content could become reusable management presentations—and identified what wider adoption would require.**
+**Turn repeated regional presentation preparation into a reusable reporting service.**
 
-I initiated the investigation, learned the reporting tools, built prototypes and compared approaches against country, division and presentation requirements. The deliverable was a practical recommendation supported by working examples and a clearer view of ownership and access dependencies.
+Management packs drew on several Qlik applications, but countries and functions still needed separately assembled presentations. The challenge was the final step: generate the right variants and make on-demand or scheduled distribution practical.
 
-[Open sample slides](reports/Country-Product-Report.pptx) · [Investigation and decisions](docs/case-study.md) · [Website case study](https://matthew-bangle-data-portfolio.mattbangle.chatgpt.site/work/reporting-automation-adoption)
+**My contribution:** I initiated the investigation, translated audience and presentation needs into requirements, learned the reporting tools and built country/division and multi-application prototypes. I compared the options, consulted technical specialists and presented recommendations on templates, access and ownership.
+
+**Result and status:** working report examples and an implementation recommendation. Wider rollout depended on central ownership and coordinated access that were not established. The public generator below is a new fictional demonstration; it generates scoped files, without connecting to Qlik or sending them.
+
+[Read the business case](https://matthew-bangle-data-portfolio.mattbangle.chatgpt.site/work/reporting-automation-adoption) · [Run the public demonstration](#run-the-demonstration)
 
 ![Fictional country and product report variants assembled from a shared template](assets/report-stack.png)
 
