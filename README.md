@@ -1,3 +1,5 @@
+**English** | [Deutsch](README.de.md)
+
 # Scaling Management Reporting with Qlik
 
 **Turn repeated regional presentation preparation into a reusable reporting service.**
